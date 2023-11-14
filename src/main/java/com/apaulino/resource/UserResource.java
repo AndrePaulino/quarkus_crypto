@@ -1,5 +1,6 @@
 package com.apaulino.resource;
 
+import javax.annotation.security.PermitAll;
 import javax.transaction.Transactional;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
@@ -12,10 +13,11 @@ import com.apaulino.model.User;
 public class UserResource {
 
 	@POST
+	@PermitAll
 	@Transactional
 	@Consumes(MediaType.APPLICATION_JSON)
-	public void insert(User user) {
-		User.persist(user);
+	public void create(User user) {
+		User.insert(user);
 	}
 
 }

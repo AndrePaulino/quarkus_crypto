@@ -1,60 +1,27 @@
-# crypto
+# Java e Quarkus: Supersônico e Subatômico
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+Código desenvolvido a partir do curso - [_Java e Quarkus: Supersônico e Subatômico_](https://alura.com.br/course/java-supersonico-subatomico-quarkus) da escola Alura
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+<br>
 
-## Running the application in dev mode
+<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
+<img src="https://img.shields.io/badge/quarkus-%234794EB.svg?style=for-the-badge&logo=quarkus&logoColor=white"/>
 
-You can run your application in dev mode that enables live coding using:
-```shell script
-./mvnw compile quarkus:dev
-```
+Faça esse curso de Java e:
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
+- Aprenda a criar uma aplicação usando Quarkus
+- Crie imagem nativa das suas aplicações
+- Consuma API's REST de forma descomplicada
+- Escreva código tirando proveito do Hibernate Panache
+- Aplique regras de segurança da sua aplicação com Quarkus Security JPA
+- Empacote e distribua sua aplicação utilizando containers
 
-## Packaging and running the application
+<br>
 
-The application can be packaged using:
-```shell script
-./mvnw package
-```
-It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
+Curso parte da formação _DITEC - Cloud - Java Básico_
 
-The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
+<br>
 
-If you want to build an _über-jar_, execute the following command:
-```shell script
-./mvnw package -Dquarkus.package.type=uber-jar
-```
-
-The application, packaged as an _über-jar_, is now runnable using `java -jar target/*-runner.jar`.
-
-## Creating a native executable
-
-You can create a native executable using: 
-```shell script
-./mvnw package -Dnative
-```
-
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using: 
-```shell script
-./mvnw package -Dnative -Dquarkus.native.container-build=true
-```
-
-You can then execute your native executable with: `./target/crypto-1.0.0-runner`
-
-If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.
-
-## Related Guides
-
-- RESTEasy Reactive ([guide](https://quarkus.io/guides/resteasy-reactive)): A JAX-RS implementation utilizing build time processing and Vert.x. This extension is not compatible with the quarkus-resteasy extension, or any of the extensions that depend on it.
-
-## Provided Code
-
-### RESTEasy Reactive
-
-Easily start your Reactive RESTful Web Services
-
-[Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
+<p align="center"><b>
+Se gostou 🌟 - Por André Paulino {🎧}
+</b></p>

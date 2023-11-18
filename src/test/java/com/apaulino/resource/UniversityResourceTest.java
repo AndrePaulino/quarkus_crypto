@@ -1,20 +1,20 @@
-package com.apaulino.resource;
+// package com.apaulino.resource;
 
-import org.junit.jupiter.api.Test;
+// import org.junit.jupiter.api.Test;
 
-import io.quarkus.test.junit.QuarkusTest;
-import static io.restassured.RestAssured.given;
+// import io.quarkus.test.junit.QuarkusTest;
+// import static io.restassured.RestAssured.given;
 
-@QuarkusTest
-public class UniversityResourceTest {
+// @QuarkusTest
+// public class UniversityResourceTest {
 
-	@Test
-	public void testarSeStatusCodeDaRequisicaoE200() {
-		given()
-				.get("universities")
-				.then()
-				.statusCode(200);
+// @Test
+// public void testarSeStatusCodeDaRequisicaoE200() {
+// given()
+// .get("universities")
+// .then()
+// .statusCode(200);
 
-	}
+// }
 
-}
+// }

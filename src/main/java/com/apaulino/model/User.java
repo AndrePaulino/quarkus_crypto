@@ -1,5 +1,6 @@
 package com.apaulino.model;
 
+import javax.json.bind.annotation.JsonbTransient;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -35,7 +36,6 @@ public class User extends PanacheEntityBase {
 	@Username
 	private String username;
 
-	@Getter
 	@Setter
 	@Password
 	private String password;
@@ -44,6 +44,11 @@ public class User extends PanacheEntityBase {
 	@Setter
 	@Roles
 	private String role;
+
+	@JsonbTransient
+	public String getPassword() {
+		return password;
+	}
 
 	public static void insert(User user) {
 		user.password = BcryptUtil.bcryptHash(user.password);

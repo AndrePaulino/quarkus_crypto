@@ -20,15 +20,19 @@ public class Order {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
+	@Getter
 	@Setter
 	private Double preco;
 
+	@Getter
 	@Setter
 	private String tipo;
 
+	@Getter
 	@Setter
 	private LocalDate data;
 
+	@Getter
 	@Setter
 	private String status;
 
